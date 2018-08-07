@@ -1,6 +1,7 @@
 import React from 'react';
 import {Provider, connect} from 'react-redux';
 import Counter from './counter';
+import Catalog from './catalog';
 import reactLogo from '../assets/react-logo.png'
 
 
@@ -27,6 +28,8 @@ export default class Root extends React.Component {
                         <img src={reactLogo} style={{width: 100}}/> <br />
                         This was rendered by App1, which is written in React.
                         <Counter globalEventDistributor={this.state.globalEventDistributor}/>
+                        <br />
+                        <Catalog globalEventDistributor={this.state.globalEventDistributor}/>
                     </div>
                 </Provider>
         }
