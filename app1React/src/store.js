@@ -1,7 +1,11 @@
 import { createStore } from 'redux';
 
 const initialState = {
-    count: 0
+    count: 0,
+    countA: 0,
+    countB: 0,
+    countC: 0,
+    countD: 0
 };
 
 function reducer(state = initialState, action) {
