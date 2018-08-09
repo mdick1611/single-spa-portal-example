@@ -12,27 +12,51 @@ function reducer(state = initialState, action) {
     switch(action.type) {
         case 'INCREMENT':
             return {
-                count: state.count + 1
+                count: state.count + 1,
+                countA: state.countA,
+                countB: state.countB,
+                countC: state.countC,
+                countD: state.countD
             };
         case 'DECREMENT':
             return {
-                count: state.count - 1
+                count: state.count - 1,
+                countA: state.countA,
+                countB: state.countB,
+                countC: state.countC,
+                countD: state.countD
             };
         case 'ADD_TO_CART_A':
             return {
-               countA: state.countA + 1
+               countA: state.countA + 1,
+                count: state.count,
+                countB: state.countB,
+                countC: state.countC,
+                countD: state.countD
             };
         case 'ADD_TO_CART_B':
             return {
-                countB: state.countB + 1
+                countB: state.countB + 1,
+                countA: state.countA,
+                count: state.count,
+                countC: state.countC,
+                countD: state.countD
             };
         case 'ADD_TO_CART_C':
             return {
-                countC: state.countC + 1
+                countC: state.countC + 1,
+                countA: state.countA,
+                countB: state.countB,
+                count: state.count,
+                countD: state.countD
             };
         case 'ADD_TO_CART_D':
             return {
-                countD: state.countD + 1
+                countD: state.countD + 1,
+                countA: state.countA,
+                countB: state.countB,
+                countC: state.countC,
+                count: state.count
             };
         default:
             return state;
