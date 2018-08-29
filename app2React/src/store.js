@@ -10,16 +10,6 @@ const initialState = {
 
 function reducer(state = initialState, action) {
     switch(action.type) {
-        case 'INCREMENT':
-            return {
-                ...state,
-                count: state.count + 1,
-            };
-        case 'DECREMENT':
-            return {
-                ...state,
-                count: state.count - 1,
-            };
         case 'ADD_TO_CART_A':
             return {
                 ...state,

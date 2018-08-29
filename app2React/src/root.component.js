@@ -1,6 +1,5 @@
 import React from 'react';
 import {Provider, connect} from 'react-redux';
-import Counter from './counter';
 import Catalog from './cart';
 import reactLogo from '../assets/react-logo.png'
 
