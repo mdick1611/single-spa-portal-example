@@ -6,7 +6,7 @@
     "watch": "webpack-dev-server --port 9000",
     "build": "webpack -p --progress"
   },
-  "author": "Michael Ruecker",
+  "author": "Michael Ruecker, Marvin Dick",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
